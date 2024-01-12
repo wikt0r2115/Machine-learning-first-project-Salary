@@ -36,21 +36,7 @@ def compute_cost(x:list[float],y:list[float],w:float,b:float):
         cost_sum += (y_p-y[i])**2
     cost_sum /= 2*m
     return cost_sum
-'''
-def cost_3D_visualization(x:list[float],y:list[float]):
-    w_array = list()
-    for i in range(0,400+1,5):
-        w_array.append(i)
-    b_array = w_array
-    #print(w_array)
-    m = len(w_array)
-    cost = list()
-    for i in range(m):
-        cost.append(compute_cost(x,y,w_array[i],b_array[i]))
-    ax = plt.axes(projection='3d')
-    ax.scatter(w_array,b_array,cost)
-    plt.show()
-'''
+
 def compute_gradient(x:list[float],y:list[float],w:float,b:float):
     m = len(x)
     dj_dw = 0
@@ -107,4 +93,3 @@ training_data_visualization(x_train,y_train,w_init,b_init)
 #print('w,b after ',iterations,' w:',w,' b:',b)
 
 prediction(2.1/15,w_init,b_init)
-#ZMIENIONA WERSJA
