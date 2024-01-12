@@ -107,3 +107,4 @@ training_data_visualization(x_train,y_train,w_init,b_init)
 #print('w,b after ',iterations,' w:',w,' b:',b)
 
 prediction(2.1/15,w_init,b_init)
+#ZMIENIONA WERSJA
